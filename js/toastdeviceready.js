@@ -1,4 +1,7 @@
 var phonegapReady = function(){
-        alert("we are in phonegap");
+        new jQuery.nd2Toast({message:"we are in phonegap"});
     };
+
+jQuery(document).ready(function(){
     document.addEventListener("deviceready", phonegapReady, false);
+});
